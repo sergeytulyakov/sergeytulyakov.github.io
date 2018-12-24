@@ -28,11 +28,8 @@
 		<div class="col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2 text-justify">
 		   This paper introduces a novel deep learning framework for image animation. Given an input image with a target object and a driving video sequence depicting a moving object, our framework generates a video in which the target object is <i>animated</i> according to the driving sequence. This is achieved through a deep architecture that decouples appearance and motion information. Our framework consists of three main modules: <i>(i)</i> a Keypoint Detector unsupervisely trained to extract object keypoints, <i>(ii)</i> a Dense Motion prediction network for generating dense heatmaps from sparse keypoints, in order to better encode motion information and <i>(iii)</i> a Motion Transfer Network, which uses the motion heatmaps and appearance information extracted from the input image to synthesize the output frames. We demonstrate the effectiveness of our method on several benchmark datasets, spanning a wide variety of object appearances, and show that our approach outperforms state-of-the-art image animation and video generation methods.</div>
 </div>
-
-
 <div class="row">
-	<!--<div class="col-xs-12 col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2"> -->>
-        <div class="col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2 text-justify">
+	<div class="col-xs-12 col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2">
 	<h2 class="page-header">Spotlight video</h2>
 		<div class="embed-responsive embed-responsive-16by9">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/YXgzCptZOKk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -77,10 +74,14 @@ To deal with large motions, we aim to learn keypoints that describe motion as we
 </div> </div>
 
 
+<div class="row">
 <div class="col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2 text-justify">
 <h2 class="page-header">Learned keypoints</h2>
+</div>
 
-<table>
+<div class="col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2 text-justify" >
+
+<table align="center">
 <tr>
 <td> <img src='../images/bair-kp-gif/mtm001.gif'/> </td> <td> <img src='../images/bair-kp-gif/mtm002.gif'/> </td> <td> <img src='../images/bair-kp-gif/mtm003.gif'/> </td>
 <td> <img src='../images/bair-kp-gif/mtm004.gif'/> </td> <td> <img src='../images/bair-kp-gif/mtm005.gif'/> </td> <td> <img src='../images/bair-kp-gif/mtm006.gif'/> </td>
@@ -113,6 +114,7 @@ To deal with large motions, we aim to learn keypoints that describe motion as we
 
 </table>
 
+</div>
 </div>
 
 
