@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Monkey-Net</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../css/bootstrap-social.css" rel="stylesheet" />
+        <link href="../css/custom.css" rel="stylesheet" />
+        <!-- Custom CSS -->
+        <link href="../css/modern-business.css" rel="stylesheet" />
+        <!-- Custom Fonts -->
+        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		
+		<script src="../js/jquery.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+    </head>
+<body>
+
+        <!-- Page Content -->
+<div class="container">
+<!-- Marketing Icons Section -->
+<div class="row">
+		<h1 class="text-center">Animating Arbitrary Objects via Deep Motion Transfer</h1>
+		<h3 class="text-center">Aliaksandr Siarohin, Stéphane Lathuilière, Sergey Tulyakov, Elisa Ricci and Nicu Sebe</h3>
+		<h3 class="text-center"> in CVPR 2019 (Oral) </h3>
+		<h2 class="text-center">Abstract</h2>
+				
+		<div class="col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2 text-justify">
+		   This paper introduces a novel deep learning framework for image animation. Given an input image with a target object and a driving video sequence depicting a moving object, our framework generates a video in which the target object is <i>animated</i> according to the driving sequence. This is achieved through a deep architecture that decouples appearance and motion information. Our framework consists of three main modules: <i>(i)</i> a Keypoint Detector unsupervisely trained to extract object keypoints, <i>(ii)</i> a Dense Motion prediction network for generating dense heatmaps from sparse keypoints, in order to better encode motion information and <i>(iii)</i> a Motion Transfer Network, which uses the motion heatmaps and appearance information extracted from the input image to synthesize the output frames. We demonstrate the effectiveness of our method on several benchmark datasets, spanning a wide variety of object appearances, and show that our approach outperforms state-of-the-art image animation and video generation methods.</div>
+</div>
+<div class="row">
+	<div class="col-xs-12 col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2">
+	<h2 class="page-header">Spotlight video</h2>
+		<div class="embed-responsive embed-responsive-16by9">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/YXgzCptZOKk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        	</div>
+	</div>
+
+</div>
+
+<div class="row">
+	<table align=center width=300px>
+		<tr>
+		<td align=center width=50px>
+		<center>
+			<span style="font-size:24px"><a href='https://arxiv.org/abs/1812.08861'>[Paper]</a>
+		</center>
+		</td>
+		<td align=center width=50px>
+		<center>
+			<span style="font-size:24px"><a href='https://github.com/AliaksandrSiarohin/monkey-net'>[GitHub]</a></span>
+		</center>
+		</td>
+	</table>
+</div>
+
+
+<div class="row">
+<div class="col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2 text-justify">
+<h2 class="page-header">How does it work?</h2>
+<div><img class="img-responsive" src="../images/monkey-net.svg" alt="A schematic representation of the proposed motion transfer framework for image animation"/></div>
+
+<br/>
+<p>The output video is generated frame-by-frame as illustrated in Figure above (left). At time <b>t</b>, our proposed neural network the Monkey-Net uses the source image and the <b>t<sup>th</sup></b> frame from the driving video. In order to train a Monkey-Net one just needs a dataset consisting of videos of objects of interest. No specific labels, such as keypoint annotations, are required. The learning process is fully self-supervised. Therefore, at test time, in order to generate a video sequence, the generator requires only a static input image and a motion descriptor from the driving sequence.</p>
+
+<p>The Monkey-Net architecture is illustrated in Figure above (right).
+Let <b>x</b> and <b>x'</b> be two frames of size extracted from the same video. We jointly learn a keypoint detector together with a generator network according to the following objective: generator should be able to reconstruct <b>x'</b> from the keypoint locations and <b>x</b>. In this formulation, the motion between  <b>x</b> and <b>x'</b> is implicitly modeled. 
+To deal with large motions, we aim to learn keypoints that describe motion as well as the object geometry. To this end, we add a third network that estimates the optical flow between <it>x</it> and <b>x'</b> from keypoints and <b>x</b>. </p>
+
+
+<p>The motivation for this is twofold. First, this forces the keypoint detector to predict keypoint locations that capture not only the object structure but also its motion. To do so, the learned keypoints must be located especially on the object parts with high probability of motion. For instance, considering the human body, it is important to obtain keypoints on the extremities (as in feet or hands) in order to describe the body movements correctly, since these body-parts tend to move the most. Second, following common practises in conditional image generation, the generator is implemented as an encoder-decoder composed of convolutional blocks. However, standard convolutional encoder-decoders are not designed to handle large pixel-to-pixel misalignment between the input and output images. To this aim, we introduce a deformation module within the generator that employs the estimated optical flow in order to align the encoder features with <b>x'</b>.
+</p>
+
+</div> </div>
+
+
+<div class="row">
+<div class="col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2 text-justify">
+<h2 class="page-header">Learned keypoints</h2>
+</div>
+
+<div class="col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2 text-justify" >
+
+<table align="center">
+<tr>
+<td> <img src='../images/bair-kp-gif/mtm001.gif'/> </td> <td> <img src='../images/bair-kp-gif/mtm002.gif'/> </td> <td> <img src='../images/bair-kp-gif/mtm003.gif'/> </td>
+<td> <img src='../images/bair-kp-gif/mtm004.gif'/> </td> <td> <img src='../images/bair-kp-gif/mtm005.gif'/> </td> <td> <img src='../images/bair-kp-gif/mtm006.gif'/> </td>
+<td> <img src='../images/bair-kp-gif/mtm007.gif'/> </td> <td> <img src='../images/bair-kp-gif/mtm008.gif'/> </td> <td> <img src='../images/bair-kp-gif/mtm009.gif'/> </td>
+<td> <img src='../images/bair-kp-gif/mtm010.gif'/> </td> <td> <img src='../images/bair-kp-gif/mtm011.gif'/> </td> <td> <img src='../images/bair-kp-gif/mtm012.gif'/> </td>
+<tr/>
+
+<tr>
+<td> <img src='../images/nemo-kp-gif/mtm001.gif'/> </td> <td> <img src='../images/nemo-kp-gif/mtm002.gif'/> </td> <td> <img src='../images/nemo-kp-gif/mtm003.gif'/> </td>
+<td> <img src='../images/nemo-kp-gif/mtm004.gif'/> </td> <td> <img src='../images/nemo-kp-gif/mtm005.gif'/> </td> <td> <img src='../images/nemo-kp-gif/mtm006.gif'/> </td>
+<td> <img src='../images/nemo-kp-gif/mtm007.gif'/> </td> <td> <img src='../images/nemo-kp-gif/mtm008.gif'/> </td> <td> <img src='../images/nemo-kp-gif/mtm009.gif'/> </td>
+<td> <img src='../images/nemo-kp-gif/mtm010.gif'/> </td> <td> <img src='../images/nemo-kp-gif/mtm011.gif'/> </td> <td> <img src='../images/nemo-kp-gif/mtm012.gif'/> </td>
+<tr/>
+
+
+<tr>
+<td> <img src='../images/taichi-kp-gif/mtm001.gif'/> </td> <td> <img src='../images/taichi-kp-gif/mtm002.gif'/> </td> <td> <img src='../images/taichi-kp-gif/mtm003.gif'/> </td>
+<td> <img src='../images/taichi-kp-gif/mtm004.gif'/> </td> <td> <img src='../images/taichi-kp-gif/mtm005.gif'/> </td> <td> <img src='../images/taichi-kp-gif/mtm006.gif'/> </td>
+<td> <img src='../images/taichi-kp-gif/mtm007.gif'/> </td> <td> <img src='../images/taichi-kp-gif/mtm008.gif'/> </td> <td> <img src='../images/taichi-kp-gif/mtm009.gif'/> </td>
+<td> <img src='../images/taichi-kp-gif/mtm010.gif'/> </td> <td> <img src='../images/taichi-kp-gif/mtm011.gif'/> </td> <td> <img src='../images/taichi-kp-gif/mtm012.gif'/> </td>
+<tr/>
+
+<tr>
+<td colspan=2> <img src='../images/moving-gif-kp-gif/mtm001.gif'/> </td>  <td colspan=2> <img src='../images/moving-gif-kp-gif/mtm002.gif'/> </td>
+<td colspan=2> <img src='../images/moving-gif-kp-gif/mtm003.gif'/> </td> <td colspan=2> <img src='../images/moving-gif-kp-gif/mtm004.gif'/> </td> 
+<td colspan=2> <img src='../images/moving-gif-kp-gif/mtm005.gif'/> </td> <td colspan=2> <img src='../images/moving-gif-kp-gif/mtm006.gif'/> </td>
+<tr/>
+
+
+
+</table>
+
+</div>
+</div>
+
+
+
+<div class="col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2 text-justify">
+<h2 class="page-header">Citation</h2>
+
+<pre>
+@InProceedings{Siarohin_2019_CVPR,
+  author={Siarohin, Aliaksandr and Lathuilière, Stéphane and Tulyakov, Sergey and Ricci, Elisa and Sebe, Nicu},
+  title={Animating Arbitrary Objects via Deep Motion Transfer},
+  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month = {June},
+  year = {2019}
+}
+</pre>																
+
+</div>
+
+
+
+</div>
+
+</body>
+</html>
