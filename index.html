@@ -22,6 +22,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/font-awesome.min.css">
   <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://unpkg.com/scroll-hint@1.1.2/css/scroll-hint.css">
+  <script src="https://unpkg.com/scroll-hint@1.1.2/js/scroll-hint.js"></script>
+
   <style>
     .testimonial-group>.row {
       overflow-x: auto;
@@ -153,7 +156,7 @@
     }
 
     @media (min-width:768px) {
-      .timeline-steps .timeline-step:not(:last-child):after {
+      .timeline-steps .timeline-step:not(:first-child):after {
         content: "";
         display: block;
         border-top: .25rem dotted #3b82f6;
@@ -163,7 +166,7 @@
         top: .3125rem
       }
 
-      .timeline-steps .timeline-step:not(:first-child):before {
+      .timeline-steps .timeline-step:not(:last-child):before {
         content: "";
         display: block;
         border-top: .25rem dotted #3b82f6;
@@ -201,6 +204,7 @@
 
     .scrolling-wrapper {
       overflow-x: auto;
+      direction: rtl;
     }
 
     .social {
@@ -216,13 +220,6 @@
       width:100%;
     }
   </style>
-
-  <script>
-    window.onload = function () {
-      var scrollContainer = document.getElementById('scroll-container');
-      scrollContainer.scrollLeft = scrollContainer.scrollWidth;
-    }
-  </script>
 
 </head>
 
@@ -269,98 +266,19 @@
     <h3 class="display-6 fw-bold">Experience</h3>
     <div class="container col-lg-12">
 
-      <div id="scroll-container" class="row scrolling-wrapper flex-row flex-nowrap mt-4 pb-4 pt-2">
+      <div id="scroll-container" class="row scrolling-wrapper flex-row flex-nowrap mt-4 pb-4 pt-2 js-scrollable">
         <div class="col">
           <div class="timeline-steps">
-
             
-            <div class="timeline-step">
-              <div class="timeline-content">
-                <div class="inner-circle">
-                  <img class="fa-img" src=" images/bsuir.png ">
-                </div>
-                <p class="h6 mt-3 mb-1">2009</p>
-                <p class="h6 text-muted mb-0 mb-lg-0">B.Eng at Belorusian State University of Informatics and Radioelectronics</p>
-              </div>
-            </div>
             
-            <div class="timeline-step">
-              <div class="timeline-content">
-                <div class="inner-circle">
-                  <img class="fa-img" src=" images/bsuir.png ">
-                </div>
-                <p class="h6 mt-3 mb-1">2010</p>
-                <p class="h6 text-muted mb-0 mb-lg-0">MSC at Belorusian State University of Informatics and Radioelectronics</p>
-              </div>
-            </div>
-            
-            <div class="timeline-step">
-              <div class="timeline-content">
-                <div class="inner-circle">
-                  <img class="fa-img" src=" images/unitn.png ">
-                </div>
-                <p class="h6 mt-3 mb-1">2012-2017</p>
-                <p class="h6 text-muted mb-0 mb-lg-0">PhD at University of Trento, Italy</p>
-              </div>
-            </div>
-            
-            <div class="timeline-step">
-              <div class="timeline-content">
-                <div class="inner-circle">
-                  <img class="fa-img" src=" images/cmu.png ">
-                </div>
-                <p class="h6 mt-3 mb-1">Sept 2010 - Feb 2015</p>
-                <p class="h6 text-muted mb-0 mb-lg-0">Research intern at the Robotics Institute, Carnegie-Mellon University</p>
-              </div>
-            </div>
-            
-            <div class="timeline-step">
-              <div class="timeline-content">
-                <div class="inner-circle">
-                  <img class="fa-img" src=" images/msft.png ">
-                </div>
-                <p class="h6 mt-3 mb-1">Aug 2016 - Nov 2016</p>
-                <p class="h6 text-muted mb-0 mb-lg-0">Research Intern at Microsoft Research, Cambridge, UK</p>
-              </div>
-            </div>
-            
-            <div class="timeline-step">
-              <div class="timeline-content">
-                <div class="inner-circle">
-                  <img class="fa-img" src=" images/nvidia.png ">
-                </div>
-                <p class="h6 mt-3 mb-1">Jan 2017 - Apr 2017</p>
-                <p class="h6 text-muted mb-0 mb-lg-0">Research Intern at NVIDIA Research, Santa Clara, CA</p>
-              </div>
-            </div>
             
             <div class="timeline-step">
               <div class="timeline-content">
                 <div class="inner-circle">
                   <img class="fa-img" src=" images/snap.png ">
                 </div>
-                <p class="h6 mt-3 mb-1">Jul 2017</p>
-                <p class="h6 text-muted mb-0 mb-lg-0">Joined Snap Inc. as Senior Research Scientist</p>
-              </div>
-            </div>
-            
-            <div class="timeline-step">
-              <div class="timeline-content">
-                <div class="inner-circle">
-                  <img class="fa-img" src=" images/snap.png ">
-                </div>
-                <p class="h6 mt-3 mb-1">Dec 2018</p>
-                <p class="h6 text-muted mb-0 mb-lg-0">Lead Research Scientist</p>
-              </div>
-            </div>
-            
-            <div class="timeline-step">
-              <div class="timeline-content">
-                <div class="inner-circle">
-                  <img class="fa-img" src=" images/snap.png ">
-                </div>
-                <p class="h6 mt-3 mb-1">Mar 2021</p>
-                <p class="h6 text-muted mb-0 mb-lg-0">Principal Research Scientist, Manager</p>
+                <p class="h6 mt-3 mb-1">Jul 2024</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Director of Research</p>
               </div>
             </div>
             
@@ -379,8 +297,88 @@
                 <div class="inner-circle">
                   <img class="fa-img" src=" images/snap.png ">
                 </div>
-                <p class="h6 mt-3 mb-1">Jul 2024</p>
-                <p class="h6 text-muted mb-0 mb-lg-0">Director of Research</p>
+                <p class="h6 mt-3 mb-1">Mar 2021</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Principal Research Scientist, Manager</p>
+              </div>
+            </div>
+            
+            <div class="timeline-step">
+              <div class="timeline-content">
+                <div class="inner-circle">
+                  <img class="fa-img" src=" images/snap.png ">
+                </div>
+                <p class="h6 mt-3 mb-1">Dec 2018</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Lead Research Scientist</p>
+              </div>
+            </div>
+            
+            <div class="timeline-step">
+              <div class="timeline-content">
+                <div class="inner-circle">
+                  <img class="fa-img" src=" images/snap.png ">
+                </div>
+                <p class="h6 mt-3 mb-1">Jul 2017</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Joined Snap Inc. as Senior Research Scientist</p>
+              </div>
+            </div>
+            
+            <div class="timeline-step">
+              <div class="timeline-content">
+                <div class="inner-circle">
+                  <img class="fa-img" src=" images/nvidia.png ">
+                </div>
+                <p class="h6 mt-3 mb-1">Jan 2017 - Apr 2017</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Research Intern at NVIDIA Research, Santa Clara, CA</p>
+              </div>
+            </div>
+            
+            <div class="timeline-step">
+              <div class="timeline-content">
+                <div class="inner-circle">
+                  <img class="fa-img" src=" images/msft.png ">
+                </div>
+                <p class="h6 mt-3 mb-1">Aug 2016 - Nov 2016</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Research Intern at Microsoft Research, Cambridge, UK</p>
+              </div>
+            </div>
+            
+            <div class="timeline-step">
+              <div class="timeline-content">
+                <div class="inner-circle">
+                  <img class="fa-img" src=" images/cmu.png ">
+                </div>
+                <p class="h6 mt-3 mb-1">Sept 2010 - Feb 2015</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Research intern at the Robotics Institute, Carnegie-Mellon University</p>
+              </div>
+            </div>
+            
+            <div class="timeline-step">
+              <div class="timeline-content">
+                <div class="inner-circle">
+                  <img class="fa-img" src=" images/unitn.png ">
+                </div>
+                <p class="h6 mt-3 mb-1">2012-2017</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">PhD at University of Trento, Italy</p>
+              </div>
+            </div>
+            
+            <div class="timeline-step">
+              <div class="timeline-content">
+                <div class="inner-circle">
+                  <img class="fa-img" src=" images/bsuir.png ">
+                </div>
+                <p class="h6 mt-3 mb-1">2010</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">MSC at Belorusian State University of Informatics and Radioelectronics</p>
+              </div>
+            </div>
+            
+            <div class="timeline-step">
+              <div class="timeline-content">
+                <div class="inner-circle">
+                  <img class="fa-img" src=" images/bsuir.png ">
+                </div>
+                <p class="h6 mt-3 mb-1">2009</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">B.Eng at Belorusian State University of Informatics and Radioelectronics</p>
               </div>
             </div>
             
@@ -1975,6 +1973,12 @@
 
   </main>
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+
+    new ScrollHint('.js-scrollable');
+
+  </script>
 
 </body>
 
