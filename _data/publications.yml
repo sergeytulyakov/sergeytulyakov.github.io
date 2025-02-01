@@ -17,7 +17,7 @@
   venue: "" 
 
 - title: "AV-Link: Temporally-Aligned Diffusion Features for Cross-Modal Audio-Video Generation"
-  arxiv_page: https://arxiv.org/abs/2412.04462
+  arxiv_page: https://arxiv.org/abs/2412.15191
   authors:
   - Moayed Haji-Ali
   - Willi Menapace
@@ -72,7 +72,7 @@
   venue: "" 
 
 - title: "Multi-subject Open-set Personalization in Video Generation"
-  arxiv_page: https://arxiv.org/abs/2412.09694
+  arxiv_page: https://arxiv.org/abs/2501.06187
   authors:
   - Tsai-Shien Chen
   - Aliaksandr Siarohin
@@ -110,7 +110,7 @@
   venue: "" 
 
 - title: "SnapGen: Taming High-Resolution Text-to-Image Models for Mobile Devices with Efficient Architectures and Training"
-  arxiv_page: https://snap-research.github.io/snapgen/
+  arxiv_page: https://arxiv.org/abs/2412.09619
   authors:
   - Dongting Hu
   - Jierun Chen
