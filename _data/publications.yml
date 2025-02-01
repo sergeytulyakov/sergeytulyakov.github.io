@@ -1,3 +1,185 @@
+- title: "AC3D: Analyzing and Improving 3D Camera Control in Video Diffusion Transformers"
+  arxiv_page: https://arxiv.org/abs/2411.18673
+  authors:
+  - Sherwin Bahmani
+  - Ivan Skorokhodov
+  - Guocheng Qian
+  - Aliaksandr Siarohin
+  - Willi Menapace
+  - Andrea Tagliasacchi
+  - David B. Lindell
+  - Sergey Tulyakov
+  badge: pre-print
+  highlight: ''
+  project_page: https://snap-research.github.io/ac3d/
+  teaser: publications/images/ac3d-1.mp4
+  teaser_type: video
+  venue: "" 
+
+- title: "AV-Link: Temporally-Aligned Diffusion Features for Cross-Modal Audio-Video Generation"
+  arxiv_page: https://arxiv.org/abs/2412.04462
+  authors:
+  - Moayed Haji-Ali
+  - Willi Menapace
+  - Aliaksandr Siarohin
+  - Ivan Skorokhodov
+  - Alper Canberk
+  - Kwot Sin Lee
+  - Vicente Ordonez
+  - Sergey Tulyakov
+  badge: pre-print
+  highlight: ''
+  project_page: https://snap-research.github.io/AVLink/
+  teaser: publications/images/av-link.jpg
+  teaser_type: image
+  venue: "" 
+
+
+- title: "4Real-Video: Learning Generalizable Photo-Realistic 4D Video Diffusion"
+  arxiv_page: https://arxiv.org/abs/2412.04462
+  authors:
+  - Chaoyang Wang
+  - Peiye Zhuang
+  - Tuan Duc Ngo
+  - Willi Menapace
+  - Aliaksandr Siarohin
+  - Michael Vasilkovsky
+  - Ivan Skorokhodov
+  - Sergey Tulyakov
+  - Peter Wonka
+  - Hsin-Ying Lee
+  badge: pre-print
+  highlight: ''
+  project_page: https://snap-research.github.io/4Real-Video/
+  teaser: publications/images/4real-video.mp4
+  teaser_type: video
+  venue: "" 
+
+- title: "Nested Attention: Semantic-aware Attention Values for Concept Personalization"
+  arxiv_page: https://arxiv.org/abs/2501.01407
+  authors:
+  - Or Patashnik
+  - Rinon Gal
+  - Daniil Ostashev
+  - Sergey Tulyakov
+  - Kfir Aberman
+  - Daniel Cohen-Or
+  badge: pre-print
+  highlight: ''
+  project_page: https://snap-research.github.io/NestedAttention/
+  teaser: publications/images/nested-attention.jpg
+  teaser_type: image
+  venue: "" 
+
+- title: "Multi-subject Open-set Personalization in Video Generation"
+  arxiv_page: https://arxiv.org/abs/2412.09694
+  authors:
+  - Tsai-Shien Chen
+  - Aliaksandr Siarohin
+  - Willi Menapace
+  - Yuwei Fang
+  - Kwot Sin Lee
+  - Ivan Skorokhodov
+  - Kfir Aberman
+  - Jun-Yan Zhu
+  - Ming-Hsuan Yang
+  - Sergey Tulyakov
+  badge: pre-print
+  highlight: ''
+  project_page: https://snap-research.github.io/open-set-video-personalization/
+  teaser: publications/images/video-alchemy.mp4
+  teaser_type: video
+  venue: "" 
+
+- title: "Omni-ID: Holistic Identity Representation Designed for Generative Tasks"
+  arxiv_page: https://arxiv.org/abs/2412.09694
+  authors:
+  - Guocheng Qian
+  - Kuan-Chieh Wang
+  - Or Patashnik
+  - Negin Heravi
+  - Daniil Ostashev
+  - Sergey Tulyakov
+  - Daniel Cohen-Or
+  - Kfir Aberman
+  badge: pre-print
+  highlight: ''
+  project_page: https://snap-research.github.io/Omni-ID/
+  teaser: publications/images/omni-id.mp4
+  teaser_type: video
+  venue: "" 
+
+- title: "SnapGen: Taming High-Resolution Text-to-Image Models for Mobile Devices with Efficient Architectures and Training"
+  arxiv_page: https://snap-research.github.io/snapgen/
+  authors:
+  - Dongting Hu
+  - Jierun Chen
+  - Xijie Huang
+  - Huseyin Coskun
+  - Arpit Sahni
+  - Aarush Gupta
+  - Anujraaj Goyal
+  - Dishani Lahiri
+  - Rajesh Singh
+  - Yerlan Idelbayev
+  - Junli Cao
+  - Yanyu Li
+  - Kwang-Ting Cheng
+  - S.-H. Gary Chan
+  - Mingming Gong
+  - Sergey Tulyakov
+  - Anil Kag
+  - Yanwu Xu
+  - Jian Ren
+  badge: pre-print
+  highlight: ''
+  project_page: https://snap-research.github.io/snapgen/
+  teaser: publications/images/snapgen.jpg
+  teaser_type: image
+  venue: "" 
+
+- title: "SnapGen-V: Generating a Five-Second Video within Five Seconds on a Mobile Device"
+  arxiv_page: https://arxiv.org/abs/2412.10494
+  authors:
+  - Yushu Wu
+  - Zhixing Zhang
+  - Yanyu Li
+  - Yanwu Xu
+  - Anil Kag
+  - Yang Sui
+  - Huseyin Coskun
+  - Ke Ma
+  - Aleksei Lebedev
+  - Ju Hu
+  - Dimitris Metaxas
+  - Yanzhi Wang
+  - Sergey Tulyakov
+  - Jian Ren
+  badge: pre-print
+  highlight: ''
+  project_page: https://snap-research.github.io/snapgen-v/
+  teaser: publications/images/snapgen-v.mp4
+  teaser_type: video
+  venue: "" 
+
+- title: "Mind the Time: Temporally-Controlled Multi-Event Video Generation"
+  arxiv_page: https://arxiv.org/abs/2412.05263
+  authors:
+    - Ziyi Wu
+    - Aliaksandr Siarohin
+    - Willi Menapace
+    - Ivan Skorokhodov
+    - Yuwei Fang
+    - Varnith Chordia
+    - Igor Gilitschenski
+    - Sergey Tulyakov
+  badge: pre-print
+  highlight: ''
+  project_page: https://mint-video.github.io/
+  teaser: publications/images/mint-1.mp4
+  teaser_type: video
+  venue: "" 
+
 - arxiv_page: https://arxiv.org/abs/2406.04324
   authors:
   - Zhixing Zhang
@@ -38,6 +220,26 @@
   teaser_type: image
   title: 'BitsFusion: 1.99 bits Weight Quantization of Diffusion Model'
   venue: Neural Information Processing Systems, NeurIPS’2024
+
+# ICLR 2025 accepted papers
+
+- title: "DELTA: Dense Efficient Long-range 3D Tracking for Any video"
+  arxiv_page: https://arxiv.org/abs/2410.24211
+  authors:
+    - Tuan Duc Ngo 
+    - Peiye Zhuang 
+    - Chuang Gan 
+    - Evangelos Kalogerakis 
+    - Sergey Tulyakov 
+    - Hsin-Ying Lee 
+    - Chaoyang Wang
+  badge: ICLR
+  highlight: ''
+  project_page: https://snap-research.github.io/DELTA/
+  teaser: publications/images/delta-tracking.mp4
+  teaser_type: video
+  venue: "International Conference on Learning Representations, ICLR 2025"  
+
 - arxiv_page: https://arxiv.org/abs/2406.19434
   authors:
   - Junli Cao
@@ -49,13 +251,37 @@
   - Chenfanfu Jiang
   - Sergey Tulyakov
   - Jian Ren
-  badge: Pre-print
+  badge: ICLR
   highlight: ''
   project_page: https://plumpuddings.github.io/LPGS/
   teaser: publications/images/lightweight-gs.jpg
   teaser_type: image
   title: Lightweight Predictive 3D Gaussian Splats
-  venue: ''
+  venue: "International Conference on Learning Representations, ICLR 2025"
+
+- arxiv_page: https://arxiv.org/abs/2406.05649
+  authors:
+  - Peiye Zhuang
+  - Songfang Han
+  - Chaoyang Wang
+  - Aliaksandr Siarohin
+  - Jiaxu Zou
+  - Michael Vasilkovsky
+  - Vladislav Shakhrai
+  - Sergey Korolev
+  - Sergey Tulyakov
+  - Hsin-Ying Lee
+  badge: ICLR
+  highlight: ''
+  project_page: https://snap-research.github.io/GTR/
+  teaser: publications/images/gtr.mp4
+  teaser_type: video
+  title: 'GTR: Improving Large 3D Reconstruction Models through Geometry and Texture
+    Refinement'
+  venue: "International Conference on Learning Representations, ICLR 2025"
+
+# ================
+
 - arxiv_page: https://arxiv.org/abs/2406.19388
   authors:
   - Moayed Haji-Ali
@@ -71,6 +297,7 @@
   teaser_type: video
   title: Taming Data and Transformers for Audio Generation
   venue: ''
+
 - arxiv_page: https://arxiv.org/abs/2406.07472
   authors:
   - Heng Yu
@@ -89,26 +316,7 @@
   teaser_type: video
   title: '4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models'
   venue: Neural Information Processing Systems, NeurIPS’2024
-- arxiv_page: https://arxiv.org/abs/2406.05649
-  authors:
-  - Peiye Zhuang
-  - Songfang Han
-  - Chaoyang Wang
-  - Aliaksandr Siarohin
-  - Jiaxu Zou
-  - Michael Vasilkovsky
-  - Vladislav Shakhrai
-  - Sergey Korolev
-  - Sergey Tulyakov
-  - Hsin-Ying Lee
-  badge: Pre-print
-  highlight: ''
-  project_page: https://snap-research.github.io/GTR/
-  teaser: publications/images/gtr.mp4
-  teaser_type: video
-  title: 'GTR: Improving Large 3D Reconstruction Models through Geometry and Texture
-    Refinement'
-  venue: ''
+
 - arxiv_page: https://arxiv.org/abs/2404.11565
   authors:
   - Kuan-Chieh (Jackson) Wang
