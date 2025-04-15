@@ -1,3 +1,40 @@
+- title: "Nested Attention: Semantic-aware Attention Values for Concept Personalization"
+  arxiv_page: https://arxiv.org/abs/2501.01407
+  authors:
+    - Rameen Abdal
+    - Or Patashnik 
+    - Ivan Skorokhodov 
+    - Willi Menapace 
+    - Aliaksandr Siarohin 
+    - Sergey Tulyakov 
+    - Daniel Cohen-Or 
+    - Kfir Aberman
+  badge: SIGGRAPH
+  highlight: ''
+  project_page: https://rameenabdal.github.io/
+  teaser: publications/images/dynamic-concepts-2.gif
+  teaser_type: image
+  venue: "SIGGRAPH\u20192025" 
+
+- title: "Nested Attention: Semantic-aware Attention Values for Concept Personalization"
+  arxiv_page: https://arxiv.org/abs/2501.01407
+  authors:
+  - Or Patashnik
+  - Rinon Gal
+  - Daniil Ostashev
+  - Sergey Tulyakov
+  - Kfir Aberman
+  - Daniel Cohen-Or
+  badge: SIGGRAPH
+  highlight: ''
+  project_page: https://snap-research.github.io/NestedAttention/
+  teaser: publications/images/nested-attention.jpg
+  teaser_type: image
+  venue: "SIGGRAPH\u20192025" 
+
+
+# CVPR 2025 accepted papers
+
 - title: "AC3D: Analyzing and Improving 3D Camera Control in Video Diffusion Transformers"
   arxiv_page: https://arxiv.org/abs/2411.18673
   authors:
@@ -9,12 +46,13 @@
   - Andrea Tagliasacchi
   - David B. Lindell
   - Sergey Tulyakov
-  badge: pre-print
+  badge: CVPR
   highlight: ''
   project_page: https://snap-research.github.io/ac3d/
   teaser: publications/images/ac3d-1.mp4
   teaser_type: video
-  venue: "" 
+  venue: "Computer Vision and Patter Recognition, CVPR\u20192025"
+
 
 - title: "AV-Link: Temporally-Aligned Diffusion Features for Cross-Modal Audio-Video Generation"
   arxiv_page: https://arxiv.org/abs/2412.15191
@@ -27,7 +65,7 @@
   - Kwot Sin Lee
   - Vicente Ordonez
   - Sergey Tulyakov
-  badge: pre-print
+  badge: "pre-print"
   highlight: ''
   project_page: https://snap-research.github.io/AVLink/
   teaser: publications/images/av-link.jpg
@@ -48,30 +86,14 @@
   - Sergey Tulyakov
   - Peter Wonka
   - Hsin-Ying Lee
-  badge: pre-print
-  highlight: ''
+  badge: CVPR
+  highlight: 'Highlight'
   project_page: https://snap-research.github.io/4Real-Video/
   teaser: publications/images/4real-video.mp4
   teaser_type: video
-  venue: "" 
+  venue: "Computer Vision and Patter Recognition, CVPR\u20192025"
 
-- title: "Nested Attention: Semantic-aware Attention Values for Concept Personalization"
-  arxiv_page: https://arxiv.org/abs/2501.01407
-  authors:
-  - Or Patashnik
-  - Rinon Gal
-  - Daniil Ostashev
-  - Sergey Tulyakov
-  - Kfir Aberman
-  - Daniel Cohen-Or
-  badge: pre-print
-  highlight: ''
-  project_page: https://snap-research.github.io/NestedAttention/
-  teaser: publications/images/nested-attention.jpg
-  teaser_type: image
-  venue: "" 
-
-- title: "Multi-subject Open-set Personalization in Video Generation"
+- title: "VideoAlchemy: Open-set Personalization in Video Generation"
   arxiv_page: https://arxiv.org/abs/2501.06187
   authors:
   - Tsai-Shien Chen
@@ -84,12 +106,12 @@
   - Jun-Yan Zhu
   - Ming-Hsuan Yang
   - Sergey Tulyakov
-  badge: pre-print
+  badge: CVPR
   highlight: ''
   project_page: https://snap-research.github.io/open-set-video-personalization/
   teaser: publications/images/video-alchemy.mp4
   teaser_type: video
-  venue: "" 
+  venue: "Computer Vision and Patter Recognition, CVPR\u20192025"
 
 - title: "Omni-ID: Holistic Identity Representation Designed for Generative Tasks"
   arxiv_page: https://arxiv.org/abs/2412.09694
@@ -102,12 +124,12 @@
   - Sergey Tulyakov
   - Daniel Cohen-Or
   - Kfir Aberman
-  badge: pre-print
+  badge: CVPR
   highlight: ''
   project_page: https://snap-research.github.io/Omni-ID/
   teaser: publications/images/omni-id.mp4
   teaser_type: video
-  venue: "" 
+  venue: "Computer Vision and Patter Recognition, CVPR\u20192025"
 
 - title: "SnapGen: Taming High-Resolution Text-to-Image Models for Mobile Devices with Efficient Architectures and Training"
   arxiv_page: https://arxiv.org/abs/2412.09619
@@ -115,7 +137,7 @@
   - Dongting Hu
   - Jierun Chen
   - Xijie Huang
-  - Huseyin Coskun
+  - Huseyin Coskungi
   - Arpit Sahni
   - Aarush Gupta
   - Anujraaj Goyal
@@ -131,12 +153,12 @@
   - Anil Kag
   - Yanwu Xu
   - Jian Ren
-  badge: pre-print
-  highlight: ''
+  badge: CVPR
+  highlight: 'Highlight'
   project_page: https://snap-research.github.io/snapgen/
   teaser: publications/images/snapgen.jpg
   teaser_type: image
-  venue: "" 
+  venue: "Computer Vision and Patter Recognition, CVPR\u20192025"
 
 - title: "SnapGen-V: Generating a Five-Second Video within Five Seconds on a Mobile Device"
   arxiv_page: https://arxiv.org/abs/2412.10494
@@ -155,12 +177,12 @@
   - Yanzhi Wang
   - Sergey Tulyakov
   - Jian Ren
-  badge: pre-print
+  badge: CVPR
   highlight: ''
   project_page: https://snap-research.github.io/snapgen-v/
   teaser: publications/images/snapgen-v.mp4
   teaser_type: video
-  venue: "" 
+  venue: "Computer Vision and Patter Recognition, CVPR\u20192025"
 
 - title: "Mind the Time: Temporally-Controlled Multi-Event Video Generation"
   arxiv_page: https://arxiv.org/abs/2412.05263
@@ -173,12 +195,14 @@
     - Varnith Chordia
     - Igor Gilitschenski
     - Sergey Tulyakov
-  badge: pre-print
+  badge: CVPR
   highlight: ''
   project_page: https://mint-video.github.io/
   teaser: publications/images/mint-1.mp4
   teaser_type: video
-  venue: "" 
+  venue: "Computer Vision and Patter Recognition, CVPR\u20192025"
+
+# Neurips 2025 accepted papers
 
 - arxiv_page: https://arxiv.org/abs/2406.04324
   authors:
@@ -201,6 +225,7 @@
   teaser_type: video
   title: 'SF-V: Single Forward Video Generation Model'
   venue: Neural Information Processing Systems, NeurIPS’2024
+
 - arxiv_page: https://arxiv.org/abs/2406.04333
   authors:
   - Yang Sui
@@ -281,22 +306,6 @@
   venue: "International Conference on Learning Representations, ICLR 2025"
 
 # ================
-
-- arxiv_page: https://arxiv.org/abs/2406.19388
-  authors:
-  - Moayed Haji-Ali
-  - Willi Menapace
-  - Aliaksandr Siarohin
-  - Guha Balakrishnan
-  - Sergey Tulyakov
-  - Vicente Ordonez
-  badge: Pre-print
-  highlight: ''
-  project_page: https://snap-research.github.io/GenAU/
-  teaser: publications/images/genau.mp4
-  teaser_type: video
-  title: Taming Data and Transformers for Audio Generation
-  venue: ''
 
 - arxiv_page: https://arxiv.org/abs/2406.07472
   authors:
@@ -982,6 +991,8 @@
   teaser_type: image
   title: 'MoCoGAN: Decomposing Motion and Content for Video Generation'
   venue: "Computer Vision and Pattern Recognition, CVPR\u20192018"
+
+
 - arxiv_page: https://openaccess.thecvf.com/content_cvpr_2016/papers/Tulyakov_Self-Adaptive_Matrix_Completion_CVPR_2016_paper.pdf
   authors:
   - Sergey Tulyakov
@@ -994,6 +1005,20 @@
   highlight: Oral
   project_page: https://stulyakov.com/papers/cvpr2016.html
   teaser: publications/images/samc.jpg
+  teaser_type: image
+  title: Self-Adaptive Matrix Completion for Heart Rate Estimation from Face Videos
+    under Realistic Conditions
+  venue: "Computer Vision and Pattern Recognition, CVPR\u20192016"
+
+- title: Regressing a 3D Face Shape from a Single Image
+  arxiv_page: https://openaccess.thecvf.com/content_iccv_2015/papers/Tulyakov_Regressing_a_3D_ICCV_2015_paper.pdf
+  authors:
+  - Sergey Tulyakov
+  - Nicu Sebe
+  badge: ICCV
+  highlight: ""
+  project_page: ""
+  teaser: publications/images/iccv-2015.jpg
   teaser_type: image
   title: Self-Adaptive Matrix Completion for Heart Rate Estimation from Face Videos
     under Realistic Conditions
