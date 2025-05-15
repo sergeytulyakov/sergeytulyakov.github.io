@@ -1,5 +1,5 @@
-- title: "Nested Attention: Semantic-aware Attention Values for Concept Personalization"
-  arxiv_page: https://arxiv.org/abs/2501.01407
+- title: "Dynamic Concepts Personalization from Single Videos"
+  arxiv_page: https://arxiv.org/pdf/2502.14844
   authors:
     - Rameen Abdal
     - Or Patashnik 
@@ -11,7 +11,7 @@
     - Kfir Aberman
   badge: SIGGRAPH
   highlight: ''
-  project_page: https://rameenabdal.github.io/
+  project_page: https://snap-research.github.io/dynamic_concepts/
   teaser: publications/images/dynamic-concepts-2.gif
   teaser_type: image
   venue: "SIGGRAPH\u20192025" 
